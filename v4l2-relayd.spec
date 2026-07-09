@@ -5,7 +5,7 @@
 Name:           v4l2-relayd
 Summary:        Streaming relay for v4l2loopback using GStreamer
 Version:        0.2.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        GPL-2.0-only
 URL:            https://gitlab.com/vicamo/v4l2-relayd
 
@@ -74,6 +74,9 @@ install -p -D -m 0644 %{SOURCE2} %{buildroot}%{_sysconfdir}/v4l2-relayd.d/icamer
 %{_presetdir}/95-v4l2-relayd.preset
 
 %changelog
+* Thu Jul 09 2026 Simone Caronni <negativo17@gmail.com> - 0.2.0-3
+- Update configuration for gstreamer icamerasrc.
+
 * Tue Jul 07 2026 Simone Caronni <negativo17@gmail.com> - 0.2.0-2
 - Adjust dependencies.
 
